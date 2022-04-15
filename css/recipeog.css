@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&family=Bebas+Neue&family=Caveat&family=Fleur+De+Leah&family=Hind+Madurai:wght@400;700&family=Open+Sans:wght@400;700&family=Parisienne&family=Playfair+Display+SC&family=Sanchez&family=Secular+One&display=swap');
+body {
+  margin:0;
+  background-color: beige;
+
+
+}
+
+.header{
+  font-size: 80px;
+  padding-left: 100px;
+  font-family:"Sanchez"
+}
+
+h1{
+  font-family:"Sanchez";
+  left-padding: 30px;
+}
+
+h2{
+  font-family:"Sanchez";
+  text-align: center;
+}
+
+.description{
+  margin-top: -70px;
+  font-size: 25px;
+  padding-left: 100px;
+  font-family:"Caveat"
+}
+
+/* header bar */
+.navbar {
+  overflow: hidden;
+  background-color: darkred;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 99;
+}
+
+.navbar a {
+  top: 200px;
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+/* pumpkin image */
+.pumpkinimg {
+  position: absolute;
+  top:330px;
+  left: 100px;
+  border: 1px solid black;
+}
+
+/* prep time zebra table */
+table {
+  position:absolute;
+  top: 310px;
+  left: 750px;
+  padding: 20px;
+  font-size: 20px;
+  width:25%;
+  font-family: "Hind Madurai"
+}
+ td {
+  text-align: left;
+  padding: 14px;
+}
+
+tr:nth-child(odd) {
+	  background: indianred;
+	}
+
+tr:nth-child(even) {
+    background-color: goldenrod;
+  }
+
+/* ingredients section */
+
+.ingredients{
+  position: absolute;
+  left: 100px;
+  font-size: 17px;
+  spacing: 3px;
+  list-style-type: square;
+  background-color: #db8a8a;
+  width: 35%;
+  height: 650px;
+  font-family: "Hind Madurai"
+}
+
+li, ul {
+margin: 1em 0;
+}
+/* cooking directions section */
+.directions{
+  height: 650px;
+  position: absolute;
+  left: 750px;
+  font-size: 17px;
+  spacing: 3px;
+  list-style-type: square;
+  background-color: #db8a8a;
+  width: 40%;
+  font-family: "Hind Madurai";
+  padding-right: 3px;
+
+}
+/* nuritional facts section */
+.nutritional{
+  background-color: goldenrod;
+  position:absolute;
+  top: 670px;
+  left: 770px;
+  padding: 20px;
+  font-size: 20px;
+  width:19.5%;
+  font-family: "Hind Madurai"
+}
+
+.recpic{
+  padding-left: 30px;
+  display: inline-block;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 30px;
+  height: 300px;
+  width: 300px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.search-field input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: right;
+  width: 40%;
+  background: #f1f1f1;
+  margin-top:10px;
+  position:relative;
+  right:5%;
+}
+.search-field button {
+  height:42px;
+  float: right;
+  width: 10%;
+  padding: 10px;
+  background: orange;
+  color: white;
+  font-size: 17px;
+  text-align: center;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+  margin-top:10px;
+  position:relative;
+  right:5%;
+}
+.search-field button:hover {
+  background: #0b7dda;
+}
+.search-field ::after {
+  content: "";
+  clear: both;
+  display: table;
+}
