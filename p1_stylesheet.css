@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&family=Bebas+Neue&family=Caveat&family=Fleur+De+Leah&family=Hind+Madurai:wght@400;700&family=Open+Sans:wght@400;700&family=Parisienne&family=Playfair+Display+SC&family=Sanchez&family=Secular+One&display=swap');
+body {
+    margin:0;
+    background-color:beige;
+}
+
+.title_block {
+    font-weight:bold;
+    font-family:Arial;
+
+}
+
+.link_block {
+    float:left;
+    width:30%;
+}
+
+.fixed_header {
+    position:fixed;
+    top: 0;
+    overflow: hidden;
+    background-color:darkred;
+    width:100%;
+    z-index:99;
+}
+.fixed_header a {
+    
+    float:left;
+    display:block;
+    color:white;
+    text-align:center;
+    padding: 20px 16px;
+    text-decoration:none; 
+    top:200px;
+    font-size:20px;
+}
+
+.fixed_header  a:hover {
+    background:#ddd;
+    color:black;
+}
+
+.main {
+    position:relative;
+    top:100px;
+    margin-top:30px;
+}
+
+.search-field input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: right;
+    width: 40%;
+    background: #f1f1f1;
+    margin-top:10px;
+    position:relative;
+    right:5%;
+  }
+  .search-field button {
+    height:42px;
+    float: right;
+    width: 10%;
+    padding: 10px;
+    background: orange;
+    color: white;
+    font-size: 17px;
+    text-align: center;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+    margin-top:10px;
+    position:relative;
+    right:5%;
+  }
+  .search-field button:hover {
+    background: #0b7dda;
+  }
+  .search-field ::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+ 
+  .container {
+    position: relative;
+    width: 50%;
+    float:right;
+    right:13%;
+    top:-82px;
+    border-radius:25px;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left:0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.233);
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+    transform:scale(1.07);
+  }
+
+
+  
+  .text {
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family:"Caveat";
+  }
+
+  .header{
+    font-size: 80px;
+    padding-left: 100px;
+    font-family:"Sanchez"
+  }
+
+  h1{
+    font-family:"Sanchez";
+    left-padding: 30px;
+  }
+
+  .outer-wrapper{
+    display: inline-block; 
+    margin: 20px;
+
+}
+.frame{
+    width: 250px;
+    height: 200px;
+    vertical-align: middle;
+    text-align: center;
+    display: table-cell;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: 0 auto;
+    border:8px outset goldenrod; 
+
+
+}
+.ingredients{
+  position: absolute;
+  left: 100px;
+  font-size: 17px;
+  spacing: 3px;
+  list-style-type: square;
+  background-color: #db8a8a;
+  width: 20%;
+  height: 900px;
+  font-family: "Hind Madurai";
+  top:300px;
+  border-radius:10px;
+}
+
+h2{
+  font-family:"Sanchez";
+  text-align: center;
+}
+
+.nutritional{
+  background-color: goldenrod;
+  position:absolute;
+  top: 1000px;
+  right: 18%;
+  padding: 20px;
+  font-size: 20px;
+  width:35%;
+  font-family: "Hind Madurai";
+  font-weight:bold;
+  border-radius:10px;
+  animation-name:nutritional;
+  animation-duration:6s;
+  animation-iteration-count:infinite;
+  animation-direction:alternate-reverse;
+}
+
+.contactdiv {
+  background-color:darksalmon;
+  color:black;
+  border-radius:26px;
+  font-family:"Arial";
+  left:15%;
+  width:70%;
+  position:relative;
+  left:10%;
+  right:10%;
+  font-size:20px;
+}
+
+.peppers {
+  position:relative;
+  top:100px;
+  right:4%;
+}
+
+@keyframes nutritional {
+  from {background-color: goldenrod;}
+  to {background-color: rgb(231, 123, 208);}
+}
+
